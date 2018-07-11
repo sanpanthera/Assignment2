@@ -1,0 +1,38 @@
+@import './../../node_modules/bootstrap/scss/bootstrap';
+
+/*Overided bootstrap start*/
+
+$custom-color:#0a3866;
+
+.bg-dark {
+    background-color: $custom-color !important;
+}
+
+.btn-dark{
+  background-color: $custom-color !important;
+}
+/*Overided bootstrap end*/
+
+/*Custom CSS start*/
+.carousel-item img {
+    max-height: 90vh;
+}
+
+#container {
+    margin-top: 3.5em;
+}
+
+.imageSize {
+    width: 6em;
+    height: 6em;
+}
+
+.customBtn {
+    text-align: left;
+    width: 100%;
+}
+
+.card-link {
+    font-weight: bold;
+}
+/*Custom CSS end*/
