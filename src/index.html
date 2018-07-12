@@ -6,14 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <link rel='shortcut icon' type='image/ico' href='images/favicon.ico' />
-  <link rel="stylesheet" href="css/style.css">
+  <link rel='shortcut icon' type='image/ico' href='images/favicon.ico' />  
+  <link rel="stylesheet" type="text/css" href="./css/index.css">
   <title>San's pet care</title>
 </head>
 
 <body>
   <!-- Navbar Start-->
-  <div class="container fixed-top">
+  <div class="container-fluid fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
       <a href="#" class="navbar-brand">San's pet care</a>
@@ -22,7 +22,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="navbar-collapse collapse justify-content-center" id="navbarColor01">
+      <div class="navbar-collapse collapse justify-content-around" id="navbarColor01">
         <ul class="navbar-nav">
           <li class="nav-item active">
             <a class="nav-link" href="#">Home
@@ -51,10 +51,16 @@
           </li>
         </ul>
         <form class="form-inline">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
           <div class="row">
-            <button class="btn btn-outline-info ml-3 px-1 py-0 mt-1" type="submit">Search</button>
-            <button class="btn btn-outline-info ml-3 px-1 py-0 mt-1" data-toggle="modal" data-target="#sendMailModal" type="button">Send Mail</button>
+            <div class="input-group col-7">
+              <input class="form-control py-0" type="search" placeholder="search" id="search-input">
+              <span class="input-group-append">
+                <button class="btn btn-outline-info py-0" type="button">
+                  <i class="fa fa-search"></i>
+                </button>
+              </span>
+            </div>
+            <button class="btn btn-outline-info py-0" data-toggle="modal" data-target="#sendMailModal" type="button">Send Mail</button>
           </div>
         </form>
       </div>
@@ -63,7 +69,7 @@
   </div>
   <!-- Navbar Start-->
 
-  <div class="container" id="container">
+  <div class="container-fluid" id="container">
 
     <!-- Carousel Start-->
     <div id="carouselCaptions" class="carousel slide row align-items-start mx-0" data-ride="carousel">
@@ -122,7 +128,7 @@
         <div class="card">
           <div class="card-header">
             <h5 class="mb-0">
-              <a class="btn btn-dark customBtn" data-toggle="collapse" href="#exoticpets" role="button" aria-expanded="false" aria-controls="exoticpets">Exotic Pets</a>
+              <a class="customBtn" data-toggle="collapse" href="#exoticpets" role="button" aria-expanded="false" aria-controls="exoticpets">Exotic Pets</a>
             </h5>
           </div>
 
@@ -146,7 +152,7 @@
         <div class="card">
           <div class="card-header">
             <h5 class="mb-0">
-              <a class="btn btn-dark customBtn" data-toggle="collapse" href="#grooming" role="button" aria-expanded="false" aria-controls="grooming">Grooming</a>
+              <a class="customBtn" data-toggle="collapse" href="#grooming" role="button" aria-expanded="false" aria-controls="grooming">Grooming</a>
             </h5>
           </div>
 
@@ -169,7 +175,7 @@
         <div class="card">
           <div class="card-header">
             <h5 class="mb-0">
-              <a class="btn btn-dark customBtn" data-toggle="collapse" href="#health" role="button" aria-expanded="false" aria-controls="health">Health</a>
+              <a class="customBtn" data-toggle="collapse" href="#health" role="button" aria-expanded="false" aria-controls="health">Health</a>
             </h5>
           </div>
 
@@ -193,7 +199,7 @@
         <div class="card">
           <div class="card-header">
             <h5 class="mb-0">
-              <a class="btn btn-dark customBtn" data-toggle="collapse" href="#nutrition" role="button" aria-expanded="false" aria-controls="nutrition">Nutrition</a>
+              <a class="customBtn" data-toggle="collapse" href="#nutrition" role="button" aria-expanded="false" aria-controls="nutrition">Nutrition</a>
             </h5>
           </div>
 
@@ -217,7 +223,7 @@
         <div class="card">
           <div class="card-header">
             <h5 class="mb-0">
-              <a class="btn btn-dark customBtn" data-toggle="collapse" href="#pestcontrol" role="button" aria-expanded="false" aria-controls="pestcontrol">Pest Control</a>
+              <a class="customBtn" data-toggle="collapse" href="#pestcontrol" role="button" aria-expanded="false" aria-controls="pestcontrol">Pest Control</a>
             </h5>
           </div>
 
@@ -240,7 +246,7 @@
         <div class="card">
           <div class="card-header">
             <h5 class="mb-0">
-              <a class="btn btn-dark customBtn" data-toggle="collapse" href="#vaccinations" role="button" aria-expanded="false" aria-controls="vaccinations">Vaccinations</a>
+              <a class="customBtn" data-toggle="collapse" href="#vaccinations" role="button" aria-expanded="false" aria-controls="vaccinations">Vaccinations</a>
             </h5>
           </div>
 
@@ -274,7 +280,7 @@
           <div class="card mb-4 box-shadow ">
             <h2 class="card-header">Dr. Stanley Winthrop</h2>
             <img class="img-fluid rounded" src="images/doctor-winthrop.jpg" alt="Doctor Winthrop Photo">
-            <div class="card-body">
+            <div class="card-body d-flex justify-content-end flex-column">
               <h5 class="card-title">Behaviorist</h5>
               <p class="card-text">Dr. Winthrop is the guardian of Missy, a three-year old Llaso mix, who he adopted at the shelter. Dr. Winthrop
                 is passionate about spay and neuter and pet adoption, and works tireless hours outside the clinic, performing
@@ -292,7 +298,7 @@
           <div class="card mb-4 ">
             <h2 class="card-header">Dr. Kenneth Sanders</h2>
             <img class="img-fluid rounded" src="images/doctor-sanders.jpg" alt="Doctor Sanders Photo">
-            <div class="card-body">
+            <div class="card-body d-flex justify-content-end flex-column">
               <h5 class="card-title">Nutritionist</h5>
               <p class="card-text">Leroy walked into Dr. Sanders front door when she was moving into a new house. After searching for weeks for
                 Leroy's guardians, she decided to make Leroy a part of her pet family, and now has three cats.</p>
@@ -309,7 +315,7 @@
           <div class="card mb-4 box-shadow">
             <h2 class="card-header">Dr. Michael Gardner</h2>
             <img class="img-fluid rounded" src="images/doctor-gardner.jpg" alt="Doctor Gardner Photo">
-            <div class="card-body">
+            <div class="card-body d-flex justify-content-end flex-column">
               <h5 class="card-title">Practitioner</h5>
               <p class="card-text">When Dr. Gardner was 8 his family moved to Colorado, where he spent most of his free time playing on his neighbors
                 farm. He came to love spending time with the horses, chickens, and goats. He still considers all of his family's
@@ -327,7 +333,7 @@
           <div class="card mb-4 box-shadow">
             <h2 class="card-header">Dr. Brook Ruiz</h2>
             <img class="img-fluid rounded" src="images/doctor-ruiz.jpg" alt="Doctor Ruiz Photo">
-            <div class="card-body">
+            <div class="card-body d-flex justify-content-end flex-column">
               <h5 class="card-title">Radiology</h5>
               <p class="card-text">Dr. Brook has spent countless hours helping the local animal shelter with injured animals ,that find their
                 way into their doors. She recently adopted a new feline friend, Trish, that she helped rescue from a flooded
@@ -345,7 +351,7 @@
           <div class="card mb-4 box-shadow">
             <h2 class="card-header">Dr. Olivia Wong</h2>
             <img class="img-fluid rounded" src="images/doctor-wong.jpg" alt="Doctor Wong Photo">
-            <div class="card-body">
+            <div class="card-body d-flex justify-content-end flex-column">
               <h5 class="card-title">Preventive Care</h5>
               <p class="card-text">Dr. Wong is a cancer survivor who was fortunate enough to get to spend time with a therapy dog during her recovery.
                 She became passionate about therapy animals, and has started her own foundation to train and provide education
@@ -369,28 +375,28 @@
         <p>During the summer, our rabbit, Tonto, began to have severe redness and itching on his belly and feet. Through diagnostic
           testing, we learned that Tonto is severely allergic to over a dozens kinds of grass pollens. We've now been doing
           allergy injections for several months, and his itching and redness have nearly gone away.</p>
-        <footer class="blockquote-footer">Jane H.</footer>
+        <cite class="blockquote-footer">Jane H.</cite>
       </blockquote>
       <blockquote class="blockquote">
         <p>When Samantha, our Siamese cat, began sleeping all the time and urinating excessively, we brought her to see the
           specialists at Wisdom. After running a blood test, Dr. Winthrop confirmed what we all feared - Samantha was showing
           signs of diabetes. The doctor put us on a daily routine to provide Samantha insulin injections, and showed us how
           to administer the shots.</p>
-        <footer class="blockquote-footer">The McPhersons</footer>
+        <cite class="blockquote-footer">The McPhersons</cite>
       </blockquote>
       <blockquote class="blockquote">
         <p>The staff at Wisdom worked tirelessly to determine why our three-year old Golden Retriever, Roxie, started going
           into sudden kidney failure. They stabilized her and provided fluids until her kidneys were again functioning normally.
           We learned just how toxic grapes and raisins are to pets, and Roxie is no longer allowed to roam unattended in
           the orchard.</p>
-        <footer class="blockquote-footer">John B</footer>
+        <cite class="blockquote-footer">John B</cite>
       </blockquote>
       <blockquote class="blockquote">
         <p>Wisdom Pet Medicine is the only clinic around that will even book pet fish for appointments. When our 13-year old
           Comet goldfish, McAllister, turned from silvery white to an angry red, we called around, urgently trying to find
           a veterinarian who could help. Wisdom not only got us in the same day, but also was able to diagnose McAllister
           as having a severe case of septicemia.</p>
-        <footer class="blockquote-footer">Lorraine S</footer>
+        <cite class="blockquote-footer">Lorraine S</cite>
       </blockquote>
     </div>
 
@@ -398,7 +404,6 @@
       <h2 class="display-4">Medical Questionnaire</h2>
 
       <form>
-
         <fieldset class="form-group">
           <legend>Owner Info</legend>
 
@@ -451,9 +456,23 @@
       </form>
     </div>
 
-    <footer class="pt-4 my-md-5 pt-md-5 border-top">
-      <div class="row">
+    <footer class="pt-4 my-md-5 pt-md-5 border-top text-center">
+      <div class="row justify-content-center">
         <div class="col-12 col-sm-3">
+          <h5>Contact Us</h5>
+          <br />
+          <div>
+            <a href="https://www.facebook.com" class="mx-md-2">
+              <i id="social-fb" class="fa fa-facebook-square fa-3x social"></i>
+            </a>
+            <a href="https://twitter.com/" class="mx-md-2">
+              <i id="social-tw" class="fa fa-twitter-square fa-3x social"></i>
+            </a>
+            <a href="https://plus.google.com/" class="mx-md-2">
+              <i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i>
+            </a>
+          </div>
+          <br />
           <small class="d-block mb-3 text-muted">© 2018-2019</small>
         </div>
         <div class="col-12 col-sm-3">
@@ -544,7 +563,7 @@
     </div>
   </div>
   <script src="js/jquery.min.js"></script>
-  <script src="js/popper.min.js" ></script>
+  <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
 </body>
 

@@ -1,0 +1,11 @@
+@mixin btnCustom($property) {
+    color: $property;
+}
+
+@import 'custom-variables';
+.customBtn {
+    @include btnCustom($dark);
+    text-align: left;
+    width: 100%;
+    font-weight: bold;
+}
