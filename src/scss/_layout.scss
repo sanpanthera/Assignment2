@@ -1,4 +1,8 @@
 #container {
-    margin-top: 3.5em;
+    flex-grow: 1;
+    overflow-y: auto;
 }
 
+#navbar{
+    padding-right: 0.93em;
+}

@@ -8619,8 +8619,18 @@ a.text-dark:hover, a.text-dark:focus {
 footer a {
   color: #0a3866; }
 
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  height: 100vh; }
+
 #container {
-  margin-top: 3.5em; }
+  flex-grow: 1;
+  overflow-y: auto; }
+
+#navbar {
+  padding-right: 0.93em; }
 
 .customBtn {
   color: #0a3866;
