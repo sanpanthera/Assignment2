@@ -4,7 +4,6 @@ var browserSync = require('browser-sync').create();
 
 gulp.task('sass', function () {
     return gulp.src(['./src/scss/index.scss'])
-   // './node_modules/font-awesome/scss/font-awesome.scss'])
         .pipe(sass())
         .pipe(gulp.dest('./src/css'))
         .pipe(browserSync.stream());
