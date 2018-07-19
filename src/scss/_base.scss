@@ -13,3 +13,7 @@ body{
     height: 100vh;
 }
 
+input::-webkit-calendar-picker-indicator {
+    display: none;
+  }
+
